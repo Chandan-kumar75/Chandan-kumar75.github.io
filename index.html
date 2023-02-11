@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
             align-items: center;
             padding: 20px;
         }
+
         div.links a {
             padding: 5px;
             text-decoration: none;
@@ -19,7 +21,7 @@
             font-weight: bold;
         }
 
-        #section-home{
+        #section-home {
             display: flex;
             justify-content: space-between;
             background-color: skyblue;
@@ -39,6 +41,9 @@
             padding: 40px;
         }
 
+        #section-projects {
+            margin: 20px;
+        }
         .two-projects {
             display: flex;
         }
@@ -46,8 +51,37 @@
         .two-projects img {
             height: 300px;
         }
+
+        .two-projects > div {
+            width: 50%;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .two-projects>div:first-child {
+            background-color: #ecebfd;
+            margin-right: 10px;
+        }
+
+        .two-projects>div:last-child {
+            background-color: #2d3542;
+            margin-left: 10px;
+        }
+
+        .third-project {
+            padding: 20px;
+            background-image: linear-gradient(to bottom right, #620f1e,purple);
+            color: white;
+            margin: 20px 0;
+            border-radius: 20px;
+        }
+
+        .third-project img {
+            height: 400px;
+        }
     </style>
 </head>
+
 <body>
     <nav>
         <div>
@@ -74,7 +108,11 @@
         <div>
             <!--description about me-->
             <h1>Hey! I'm Chandan, learning software development</h1>
-            <p>I am an innovative, creative thinker who is adept at coming up with real solutions that work for clients. With experience in a wide variety of software, system architectures and programming languages, I am always current with the latest developments in the software development world. I pride myself on optimizing function and providing solutions that are intuitive user-friendly, adaptable and effective.</p>
+            <p>I am an innovative, creative thinker who is adept at coming up with real solutions that work for clients.
+                With experience in a wide variety of software, system architectures and programming languages, I am
+                always current with the latest developments in the software development world. I pride myself on
+                optimizing function and providing solutions that are intuitive user-friendly, adaptable and effective.
+            </p>
         </div>
 
         <div>
@@ -86,27 +124,30 @@
     <section id="section-projects">
         <div class="two-projects">
             <!--first two projects-->
-        <div>
-           <h1>Paymento</h1>
-           <p>Personal Finance Mobile App</p>
-            <img src="images/paymento.png" alt="">
-        </div>
-       
-        <div>
-           
-            <h1>Taskit</h1>
-            <p>Task Management App</p>
-            <img src="images/taskit.png" alt="">
-        </div>
-        
+            <div>
+                <h1>Paymento</h1>
+                <p>Personal Finance Mobile App</p>
+                <img src="images/paymento.png" alt="">
+            </div>
+
+            <div>
+
+                <h1>Taskit</h1>
+                <p>Task Management App</p>
+                <img src="images/taskit.png" alt="">
+            </div>
+
         </div>
 
+        <div class="third-project">
         <div>
-             <!--third project-->
-             <h1>Piyuu</h1>
-             <p>Freelancing Platform For Individual</p>
-             <img src="images/piyuu.png" alt="">
+            <!--third project-->
+            <h1>Piyuu</h1>
+            <p>Freelancing Platform For Individual</p>
+            <img src="images/piyuu.png" alt="">
+        </div>
         </div>
     </section>
 </body>
+
 </html>
